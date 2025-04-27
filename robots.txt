@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://menz1312.github.io/osi/sitemap.xml
