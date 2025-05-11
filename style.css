@@ -62,7 +62,6 @@ header a {
     transform: scale(1.1);
 }
 
-
 section {
     padding: 40px 40px;
 }
@@ -101,7 +100,6 @@ section {
     transform: scale(1.05);
 }
 
-
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -130,17 +128,8 @@ section {
     width: 40%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-}
-
-.contact-form textarea {
-    height: 150px;
-    resize: none;
-}
-
-.contact-form button {
     background-color: #004488;
     color: white;
     cursor: pointer;
@@ -153,6 +142,11 @@ section {
     background-color: #003366;
 }
 
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
 footer {
     text-align: center;
     background: #00ccff;
@@ -162,4 +156,35 @@ footer {
 
 h2 {
     text-align: center;
+}
+
+/* ================= RESPONSYWNOŚĆ ================= */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .slideshow {
+        height: 60vh;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
 }
