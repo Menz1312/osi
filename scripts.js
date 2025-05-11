@@ -1,13 +1,1 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const slideshow = document.querySelector('.slideshow');
-    const images = slideshow.querySelectorAll('img');
-    let currentIndex = 0;
-
-    function showNextSlide() {
-        images[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex + 1) % images.length;
-        images[currentIndex].classList.add('active');
-    }
-    images[currentIndex].classList.add('active');
-    setInterval(showNextSlide, 7000);
-});
+document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelector(".slideshow"),t=e.querySelectorAll("img"),s=0;function a(){t[s].classList.remove("active"),t[s=(s+1)%t.length].classList.add("active")}t[s].classList.add("active"),setInterval(a,7e3)});
